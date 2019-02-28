@@ -1,0 +1,63 @@
+2018-06-03 19:48:07.777 PDT [33452] LOG:  could not bind IPv6 address "::1": Address already in use
+2018-06-03 19:48:07.777 PDT [33452] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-06-03 19:48:07.777 PDT [33452] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2018-06-03 19:48:07.777 PDT [33452] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2018-06-03 19:48:07.777 PDT [33452] WARNING:  could not create listen socket for "localhost"
+2018-06-03 19:48:07.777 PDT [33452] FATAL:  could not create any TCP/IP sockets
+2018-06-03 19:48:07.777 PDT [33452] LOG:  database system is shut down
+2018-06-03 19:48:47.411 PDT [33502] LOG:  listening on IPv6 address "::1", port 7999
+2018-06-03 19:48:47.411 PDT [33502] LOG:  listening on IPv4 address "127.0.0.1", port 7999
+2018-06-03 19:48:47.411 PDT [33502] LOG:  listening on Unix socket "/tmp/.s.PGSQL.7999"
+2018-06-03 19:48:47.423 PDT [33503] LOG:  database system was shut down at 2018-06-03 19:47:17 PDT
+2018-06-03 19:48:47.426 PDT [33502] LOG:  database system is ready to accept connections
+2018-06-03 20:04:15.180 PDT [33972] FATAL:  role "blog_api_user" does not exist
+2018-06-03 20:04:43.633 PDT [33987] FATAL:  role "blog_api_user" does not exist
+2018-06-03 20:06:21.655 PDT [34043] FATAL:  role "blog_api_user" does not exist
+2018-06-03 20:24:38.468 PDT [34603] ERROR:  role "charlesweng" already exists
+2018-06-03 20:24:38.468 PDT [34603] STATEMENT:  CREATE ROLE charlesweng NOSUPERUSER NOCREATEDB NOCREATEROLE INHERIT LOGIN;
+2018-06-03 20:27:39.246 PDT [34693] FATAL:  database "blog_api" does not exist
+2018-06-03 20:27:44.504 PDT [34697] FATAL:  database "blog_api" does not exist
+2018-06-03 20:32:05.377 PDT [34823] FATAL:  database "charlesweng" does not exist
+2018-06-03 20:32:12.387 PDT [34827] FATAL:  database "blog_api" does not exist
+2018-06-03 20:33:05.082 PDT [34842] ERROR:  role "blog_api_user" already exists
+2018-06-03 20:33:05.082 PDT [34842] STATEMENT:  create user blog_api_user with password 'blog_api';
+2018-06-03 20:33:24.511 PDT [34842] ERROR:  syntax error at or near "'blog_api'" at character 35
+2018-06-03 20:33:24.511 PDT [34842] STATEMENT:  revoke all privileges on database 'blog_api' from blog_api_user;
+2018-06-03 20:33:33.790 PDT [34842] ERROR:  syntax error at or near "from" at character 23
+2018-06-03 20:33:33.790 PDT [34842] STATEMENT:  revoke all privileges from blog_api_user;
+2018-06-03 20:34:12.085 PDT [34842] ERROR:  syntax error at or near "drop" at character 25
+2018-06-03 20:34:12.085 PDT [34842] STATEMENT:  drop user blog_api_user
+	drop user blog_api_user;
+2018-06-03 20:36:16.574 PDT [34931] ERROR:  syntax error at or near "h" at character 91
+2018-06-03 20:36:16.574 PDT [34931] STATEMENT:  CREATE ROLE localhost NOSUPERUSER NOCREATEDB NOCREATEROLE INHERIT LOGIN CONNECTION LIMIT -h;
+2018-06-03 20:39:59.908 PDT [35034] FATAL:  database "charlesweng" does not exist
+2018-06-03 20:40:32.849 PDT [35052] ERROR:  role "blog_api_user" already exists
+2018-06-03 20:40:32.849 PDT [35052] STATEMENT:  CREATE ROLE blog_api_user NOSUPERUSER CREATEDB NOCREATEROLE INHERIT LOGIN;
+2018-06-03 20:41:59.552 PDT [35087] WARNING:  no privileges were granted for "blog_api"
+2018-06-03 20:42:29.770 PDT [35087] ERROR:  permission denied to create role
+2018-06-03 20:42:29.770 PDT [35087] STATEMENT:  create user blog_api_user with password 'blog_api';
+2018-06-04 21:07:12.498 PDT [59797] FATAL:  database "charlesweng" does not exist
+2018-06-04 21:07:45.231 PDT [59803] ERROR:  syntax error at or near "select" at character 26
+2018-06-04 21:07:45.231 PDT [59803] STATEMENT:  select * from posts_post
+	select * from posts_post;
+2018-06-04 21:08:27.841 PDT [59803] ERROR:  syntax error at or near "select" at character 21
+2018-06-04 21:08:27.841 PDT [59803] STATEMENT:  select * from posts
+	select * from posts;
+2018-06-04 21:09:06.934 PDT [59803] ERROR:  syntax error at or near "*" at character 8
+2018-06-04 21:09:06.934 PDT [59803] STATEMENT:  DELETE * from posts where title='hello mah  name is chuck';
+2018-06-04 21:09:26.270 PDT [59803] ERROR:  relation "posts" does not exist at character 13
+2018-06-04 21:09:26.270 PDT [59803] STATEMENT:  DELETE from posts where title='hello mah  name is chuck';
+2018-06-04 21:09:43.517 PDT [59803] ERROR:  operator does not exist: character varying == unknown at character 35
+2018-06-04 21:09:43.517 PDT [59803] HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.
+2018-06-04 21:09:43.517 PDT [59803] STATEMENT:  DELETE from posts_post where title=='hello mah  name is chuck';
+2018-06-11 13:03:09.004 PDT [86464] FATAL:  lock file "postmaster.pid" already exists
+2018-06-11 13:03:09.004 PDT [86464] HINT:  Is another postmaster (PID 33502) running in data directory "/Users/charlesweng/Documents/web_dev/blog_api/db"?
+2018-06-11 13:03:51.555 PDT [86488] LOG:  listening on IPv6 address "::1", port 7999
+2018-06-11 13:03:51.555 PDT [86488] LOG:  listening on IPv4 address "127.0.0.1", port 7999
+2018-06-11 13:03:51.556 PDT [86488] LOG:  listening on Unix socket "/tmp/.s.PGSQL.7999"
+2018-06-11 13:03:51.580 PDT [86489] LOG:  database system was interrupted; last known up at 2018-06-04 23:06:55 PDT
+2018-06-11 13:03:51.651 PDT [86489] LOG:  database system was not properly shut down; automatic recovery in progress
+2018-06-11 13:03:51.653 PDT [86489] LOG:  redo starts at 0/168EFD0
+2018-06-11 13:03:51.653 PDT [86489] LOG:  invalid record length at 0/168F0B0: wanted 24, got 0
+2018-06-11 13:03:51.653 PDT [86489] LOG:  redo done at 0/168F078
+2018-06-11 13:03:51.661 PDT [86488] LOG:  database system is ready to accept connections

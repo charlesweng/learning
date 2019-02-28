@@ -1,0 +1,14 @@
+node_modules
+.babelrc
+ReduxSimpleStarter/.git
+.git
+.venv
+.DS_Store
+target
+*.class
+.idea
+web_dev/blog_api/venv/
+__pycache__/
+db/
+bundle
+venv

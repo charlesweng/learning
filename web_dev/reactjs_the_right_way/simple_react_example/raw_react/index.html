@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>I'm in a React app!</title>
+  </head>
+  <body>
+    <div id="react-app"></div>
+
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react.js"></script>
+    <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react-dom.js"></script>
+    <script>
+
+      /* redundantly simple way of harcoding contacts */
+      var rootElement =
+        React.createElement('div', {},
+          React.createElement('h1', {}, "Contact Info"),
+          React.createElement('ul', {},
+            React.createElement('li', {},
+              React.createElement('h2', {}, "Charles Weng"),
+              React.createElement('a', { href: 'mailto:cweng8849@gmail.com' },
+            'cweng8849@gmail.com')
+            ),
+            React.createElement('li', {},
+              React.createElement('h2', {}, "Chuck Weng"),
+              React.createElement('a', { href: 'mailto:cweng.cs@gmail.com' },
+            'cweng.cs@gmail.com')
+            )
+          )
+        );
+        /* redundantly simple way of harcoding contacts */
+
+
+      /* block for filtering by if user had email */
+      var contacts = [
+        { key: 1, name: 'Alyssa' },
+        { key: 2, name: 'Charles', email:'cweng8849@gmail.com' }
+      ]
+
+      var listElements = contacts
+        .filter(function(contact) { return contact.email; })
+        .map(function(contact) {
+          return React.createElement('li', {key: contact.key},
+            React.createElement('h2', {}, contact.name),
+            React.createElement('a', {href: 'mailto:'+contact.email}, contact.email)
+          )
+        });
+
+      var filteredElement =
+        React.createElement('div', {},
+          React.createElement('h1', {}, "Contact Info"),
+          React.createElement('ul', {},
+            React.createElement('ul', {}, listElements)
+          )
+        );
+      /* block for filtering by if user had email */
+
+      /* React class usage */
+      var ContactItem = React.createClass({
+        propTypes: {
+          name: React.PropTypes.string.isRequired,
+        },
+
+        render: function() {
+          return (
+            React.createElement('li', {className: 'Contact'},
+              React.createElement('h2', {className: 'Contact-name'}, this.props.name)
+            )
+          )
+        },
+      });
+      /* React class usage */
+
+      ReactDOM.render(filteredElement, document.getElementById('react-app'));
+    </script>
+  </body>
+</html>
