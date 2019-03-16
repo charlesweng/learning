@@ -1,1 +1,1 @@
-docker build . -t forever_learning:redis
+docker build . -t cweng/redis:latest
