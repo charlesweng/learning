@@ -1,0 +1,10 @@
+{
+  "name": "react-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "create-react-app": "^3.0.1",
+    "graphql-cli": "^3.0.11"
+  }
+}
