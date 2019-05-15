@@ -1,0 +1,44 @@
+openContainer imdb.dbxml
+
+query 'for $a in collection("imdb.dbxml")//movie[position() <= 10]
+        let $b := tokenize($a/@actors, " ")
+        return for $c in $b
+               where $c = "P0000148"
+                       return (<mov>{$a/name}</mov>,<test>{$c}</test>)'
+print
+
+query 'for $m in collection("imdb.dbxml")//movie,
+           $p in collection("imdb.dbxml")//person
+       let $b := tokenize($m/@actors, " "),
+           $e := tokenize($m/@directors, " ")
+       return
+              (for $c in $b,
+                    $f in $e
+                where $c = $p/@id and $f = $p/@id
+                return  <actor-director>{
+                        "\n  ", <name>{$p/name}</name>
+                        ,"\n  ", <num-acted>
+                        {
+                            let $s := collection("imdb.dbxml")//movie[contains(@actors, $p/@id)]
+                            return count($s)
+                        }
+                        </num-acted>
+                        ,"\n  ", <num-directed>
+                        {
+                            let $c := collection("imdb.dbxml")//movie[contains(@directors, $p/@id)]
+                            return count($c)
+                        }
+                        </num-directed>
+                        }
+                        {
+                            if ($c = $f) then
+                                ("\n  ", <acted-and-directed>{$m/name/text()}</acted-and-directed>, "\n")
+                            else
+                                "\n"
+                        }
+                        </actor-director>
+              )
+              '
+print
+
+quit

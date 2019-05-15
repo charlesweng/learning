@@ -12,3 +12,8 @@ __pycache__/
 db/
 bundle
 venv
+*.ova
+hadoop-2.7.3-src/
+*/a5/diagnostic.data/
+*/a5/journal
+yarn.lock

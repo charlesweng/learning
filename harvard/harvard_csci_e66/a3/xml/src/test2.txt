@@ -1,0 +1,24 @@
+openContainer imdb.dbxml
+
+query 'for $p in collection("imdb.dbxml")//person
+       let $o := collection("imdb.dbxml")//oscar[@person_id=$p/@id and (type="BEST-ACTOR" or type="BEST-ACTRESS")],
+           $m := collection("imdb.dbxml")//movie[contains(@actors, $p/@id)]
+       where count($o) >= 2 and count($m[contains($m/@actors, $p/@id)]) >= 6
+       return
+       <acting-legend>
+       {
+        "\n  ", <name>{$p/name}</name>,
+        "\n  ", <num_movies>{count($m[contains($m/@actors, $p/@id)])}</num_movies>
+       }
+       {
+           for $e in $o,
+               $n in $m
+           where $n/@id = $e/@movie_id and $p/@id = $e/@person_id
+           return ("\n  ", <won-for>{$n/name/text()}</won-for>)
+           , "\n"
+       }
+       </acting-legend>
+       '
+print
+
+quit
