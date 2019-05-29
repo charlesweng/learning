@@ -11,10 +11,10 @@ const app = express();
 
 // view engine setup
 /* const jade = require("jade").__express; */
-/* app.set("views", path.join(__dirname, "views")); */
-/* app.set("view engine", "jade"); */
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "jade");
 /* app.engine(".jade", jade) */
-/* app.use(express.static(path.join(__dirname, "public"))); */
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use(logger("dev"));
 app.use(express.json());
