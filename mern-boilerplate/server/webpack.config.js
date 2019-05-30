@@ -3,13 +3,8 @@ const path = require('path');
 module.exports = {
   entry: './server.tsx',
   devtool: 'inline-source-map',
-  loaders:
   module: {
     rules: [
-      {
-        test: /\.ejs$/,
-
-      },
       {
         test: /\.tsx?$/,
         use: 'ts-loader',

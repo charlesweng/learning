@@ -6,7 +6,8 @@ let router = express.Router();
 
 /* GET home page. */
 router.get("/", (req: express.Request, res: express.Response, next: any) => {
-  res.render("index", { title: "Express" });
+  res.setHeader('Content-Type', 'application/json');
+  res.end(JSON.stringify({ "data": "Hello World!" }));
 });
 
 export default router;
