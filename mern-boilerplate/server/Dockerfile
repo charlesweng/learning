@@ -7,5 +7,5 @@ RUN apt-get install --yes \
 COPY dist/bundle.js /app/bundle.js
 RUN cd /app
 EXPOSE 3000
-cmd ["node", "/app/bundle.js"]
+ENTRYPOINT ["node", "/app/bundle.js"]
 
