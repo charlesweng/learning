@@ -1,19 +1,18 @@
+import * as cookieParser from "cookie-parser";
 import * as express from "express";
 import * as createError from "http-errors";
-import * as path from "path";
-import * as cookieParser from "cookie-parser";
 import * as logger from "morgan";
+import * as path from "path";
 import indexRouter from "./routes/index";
 import usersRouter from "./routes/users";
-
 
 const app = express();
 
 // view engine setup
-/* const jade = require("jade").__express; */
+/* const ejs = require("ejs").__express; */
 /* app.set("views", path.join(__dirname, "views")); */
-/* app.set("view engine", "jade"); */
-/* app.engine(".jade", jade) */
+/* app.set("view engine", "ejs"); */
+/* app.engine(".ejs", ejs) */
 /* app.use(express.static(path.join(__dirname, "public"))); */
 
 app.use(logger("dev"));
