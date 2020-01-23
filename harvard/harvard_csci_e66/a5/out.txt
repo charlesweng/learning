@@ -1,0 +1,715 @@
+MongoDB shell version v4.0.9
+connecting to: mongodb://127.0.0.1:27017/?gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("20462578-1290-4f1c-9fd6-9d5907478f81") }
+MongoDB server version: 4.0.9
+
+results of sample query
+-----------------------
+{ "name" : "Home Alone" }
+{ "name" : "Ghost" }
+{ "name" : "Dances with Wolves" }
+{ "name" : "Pretty Woman" }
+{ "name" : "Teenage Mutant Ninja Turtles" }
+{ "name" : "Reversal of Fortune" }
+{ "name" : "Misery" }
+{ "name" : "Goodfellas" }
+
+results of query 1
+------------------
+{ "name" : "Cast Away" }
+{ "name" : "Mission: Impossible II" }
+{ "name" : "Perfect Storm, The" }
+{ "name" : "What Women Want" }
+{ "name" : "Meet the Parents" }
+{ "name" : "X-Men" }
+{ "name" : "What Lies Beneath" }
+
+results of query 2
+------------------
+{
+	"name" : "Regina King",
+	"dob" : "1971-01-15",
+	"pob" : "Los Angeles, California, USA"
+}
+{
+	"name" : "Mahershala Ali",
+	"dob" : "1974-02-16",
+	"pob" : "Oakland, California, USA"
+}
+
+results of query 3
+------------------
+{ "year" : 1999, "movie" : { "name" : "Shakespeare in Love" } }
+{ "year" : 1998, "movie" : { "name" : "Titanic" } }
+{ "year" : 1997, "movie" : { "name" : "English Patient, The" } }
+{ "year" : 1996, "movie" : { "name" : "Braveheart" } }
+{ "year" : 1995, "movie" : { "name" : "Forrest Gump" } }
+{ "year" : 1994, "movie" : { "name" : "Schindler's List" } }
+{ "year" : 1993, "movie" : { "name" : "Unforgiven" } }
+{ "year" : 1992, "movie" : { "name" : "Silence of the Lambs, The" } }
+{ "year" : 1991, "movie" : { "name" : "Dances with Wolves" } }
+{ "year" : 1990, "movie" : { "name" : "Driving Miss Daisy" } }
+
+results of query 4
+------------------
+{ "name" : "Roman Polanski", "pob" : "Paris, France" }
+{ "name" : "Frank Darabont", "pob" : "Montebeliard, France" }
+{ "name" : "Jonathan Kaplan", "pob" : "Paris, France" }
+{ "name" : "William Wyler", "pob" : "Mulhouse, Haut-Rhin, Alsace, France" }
+{ "name" : "Olivier Dahan", "pob" : "La Ciotat, Bouches-du-Rhone, France" }
+{ "name" : "Louis Leterrier", "pob" : "Paris, France" }
+{ "name" : "Michel Hazanavicius", "pob" : "Paris, France" }
+
+results of query 5
+------------------
+[
+	{
+		"_id" : {
+			"rating" : "M"
+		},
+		"average_runtime" : 124
+	},
+	{
+		"_id" : {
+			"rating" : "GP"
+		},
+		"average_runtime" : 187
+	},
+	{
+		"_id" : {
+			"rating" : "G"
+		},
+		"average_runtime" : 116.84210526315789
+	},
+	{
+		"_id" : {
+			"rating" : "NC-17"
+		},
+		"average_runtime" : 114.5
+	},
+	{
+		"_id" : {
+			"rating" : null
+		},
+		"average_runtime" : 115.63503649635037
+	},
+	{
+		"_id" : {
+			"rating" : "PG"
+		},
+		"average_runtime" : 112.33571428571429
+	},
+	{
+		"_id" : {
+			"rating" : "R"
+		},
+		"average_runtime" : 125.17834394904459
+	},
+	{
+		"_id" : {
+			"rating" : "PG-13"
+		},
+		"average_runtime" : 127.2286995515695
+	}
+]
+
+results of query 6
+------------------
+[
+	{
+		"average_runtime" : 124,
+		"rating" : "M"
+	},
+	{
+		"average_runtime" : 187,
+		"rating" : "GP"
+	},
+	{
+		"average_runtime" : 116.84210526315789,
+		"rating" : "G"
+	},
+	{
+		"average_runtime" : 114.5,
+		"rating" : "NC-17"
+	},
+	{
+		"average_runtime" : 115.63503649635037,
+		"rating" : null
+	},
+	{
+		"average_runtime" : 112.33571428571429,
+		"rating" : "PG"
+	},
+	{
+		"average_runtime" : 125.17834394904459,
+		"rating" : "R"
+	},
+	{
+		"average_runtime" : 127.2286995515695,
+		"rating" : "PG-13"
+	}
+]
+
+results of query 7
+------------------
+[
+	{
+		"_id" : {
+			"movie" : "It Happened One Night"
+		},
+		"oscars_won" : 4
+	},
+	{
+		"_id" : {
+			"movie" : "Gone with the Wind"
+		},
+		"oscars_won" : 4
+	},
+	{
+		"_id" : {
+			"movie" : "Mrs. Miniver"
+		},
+		"oscars_won" : 4
+	},
+	{
+		"_id" : {
+			"movie" : "Going My Way"
+		},
+		"oscars_won" : 4
+	},
+	{
+		"_id" : {
+			"movie" : "Best Years of Our Lives, The"
+		},
+		"oscars_won" : 4
+	},
+	{
+		"_id" : {
+			"movie" : "West Side Story"
+		},
+		"oscars_won" : 4
+	},
+	{
+		"_id" : {
+			"movie" : "Kramer vs. Kramer"
+		},
+		"oscars_won" : 4
+	},
+	{
+		"_id" : {
+			"movie" : "Terms of Endearment"
+		},
+		"oscars_won" : 4
+	},
+	{
+		"_id" : {
+			"movie" : "One Flew Over the Cuckoo's Nest"
+		},
+		"oscars_won" : 4
+	},
+	{
+		"_id" : {
+			"movie" : "Silence of the Lambs, The"
+		},
+		"oscars_won" : 4
+	},
+	{
+		"_id" : {
+			"movie" : "From Here to Eternity"
+		},
+		"oscars_won" : 4
+	},
+	{
+		"_id" : {
+			"movie" : "Million Dollar Baby"
+		},
+		"oscars_won" : 4
+	},
+	{
+		"_id" : {
+			"movie" : "Ben-Hur"
+		},
+		"oscars_won" : 4
+	},
+	{
+		"_id" : {
+			"movie" : "On the Waterfront"
+		},
+		"oscars_won" : 4
+	}
+]
+
+results of query 8
+------------------
+[
+	"Dee Wallace-Stone",
+	"Drew Barrymore",
+	"Henry Thomas",
+	"Peter Coyote",
+	"Robert MacNaughton",
+	"Bob Peck",
+	"Jeff Goldblum",
+	"Laura Dern",
+	"Richard Attenborough",
+	"Sam Neill",
+	"Cate Blanchett",
+	"Harrison Ford",
+	"Karen Allen",
+	"Ray Winstone",
+	"Shia LaBeouf",
+	"Lorraine Gary",
+	"Murray Hamilton",
+	"Richard Dreyfuss",
+	"Robert Shaw",
+	"Roy Scheider",
+	"John Rhys-Davies",
+	"Paul Freeman",
+	"Ronald Lacey",
+	"Julianne Moore",
+	"Pete Postlethwaite",
+	"Vince Vaughn",
+	"Dakota Fanning",
+	"Justin Chatwin",
+	"Miranda Otto",
+	"Tim Robbins",
+	"Tom Cruise",
+	"Edward Burns",
+	"Jeremy Davies",
+	"Matt Damon",
+	"Tom Hanks",
+	"Tom Sizemore",
+	"Alison Doody",
+	"Denholm Elliott",
+	"Sean Connery",
+	"Daniel Day-Lewis",
+	"David Strathairn",
+	"James Spader",
+	"Joseph Gordon-Levitt",
+	"Sally Field",
+	"Amrish Puri",
+	"Jonathan Ke Quan",
+	"Kate Capshaw",
+	"Roshan Seth",
+	"Christopher Walken",
+	"Leonardo DiCaprio",
+	"Martin Sheen",
+	"Nathalie Baye",
+	"Colin Farrell",
+	"Max von Sydow",
+	"Samantha Morton",
+	"Steve Harris",
+	"Ben Kingsley",
+	"Caroline Goodall",
+	"Jonathan Sagall",
+	"Liam Neeson",
+	"Ralph Fiennes",
+	"Brian Hutchison",
+	"Domenick Lombardozzi",
+	"Mark Fichera",
+	"Mark Rylance",
+	"Victor Verhaeghe"
+]
+
+results of query 9
+------------------
+[ { "name" : "Zootopia", "runtime" : 108 } ]
+
+results of query 10
+-------------------
+[
+	{
+		"type" : "BEST-PICTURE",
+		"movie" : "Chicago"
+	},
+	{
+		"person" : "Adrien Brody",
+		"type" : "BEST-ACTOR",
+		"movie" : "Pianist, The"
+	},
+	{
+		"person" : "Nicole Kidman",
+		"type" : "BEST-ACTRESS",
+		"movie" : "Hours, The"
+	},
+	{
+		"person" : "Roman Polanski",
+		"type" : "BEST-DIRECTOR",
+		"movie" : "Pianist, The"
+	},
+	{
+		"person" : "Catherine Zeta-Jones",
+		"type" : "BEST-SUPPORTING-ACTRESS",
+		"movie" : "Chicago"
+	},
+	{
+		"person" : "Chris Cooper",
+		"type" : "BEST-SUPPORTING-ACTOR",
+		"movie" : "Adaptation."
+	}
+]
+
+results of query 11
+-------------------
+[ { "count" : 9 } ]
+[
+	{
+		"movie" : "The Hunger Games: Catching Fire",
+		"actor" : "Jennifer Lawrence"
+	},
+	{
+		"movie" : "The Hunger Games: Catching Fire",
+		"actor" : "Liam Hemsworth"
+	},
+	{
+		"movie" : "The Hunger Games: Catching Fire",
+		"actor" : "Jack Quaid"
+	},
+	{
+		"movie" : "The Hunger Games: Catching Fire",
+		"actor" : "Taylor St. Clair"
+	},
+	{
+		"movie" : "The Hunger Games: Catching Fire",
+		"actor" : "Sandra Ellis Lafferty"
+	},
+	{
+		"movie" : "Iron Man 3",
+		"actor" : "Robert Downey Jr."
+	},
+	{
+		"movie" : "Iron Man 3",
+		"actor" : "Gwyneth Paltrow"
+	},
+	{
+		"movie" : "Iron Man 3",
+		"actor" : "Don Cheadle"
+	},
+	{
+		"movie" : "Iron Man 3",
+		"actor" : "Guy Pearce"
+	},
+	{
+		"movie" : "Iron Man 3",
+		"actor" : "Rebecca Hall"
+	},
+	{
+		"movie" : "Frozen",
+		"actor" : "Kristen Bell"
+	},
+	{
+		"movie" : "Frozen",
+		"actor" : "Idina Menzel"
+	},
+	{
+		"movie" : "Frozen",
+		"actor" : "Jonathan Groff"
+	},
+	{
+		"movie" : "Frozen",
+		"actor" : "Josh Gad"
+	},
+	{
+		"movie" : "Frozen",
+		"actor" : "Santino Fontana"
+	},
+	{
+		"movie" : "Despicable Me 2",
+		"actor" : "Steve Carell"
+	},
+	{
+		"movie" : "Despicable Me 2",
+		"actor" : "Kristen Wiig"
+	},
+	{
+		"movie" : "Despicable Me 2",
+		"actor" : "Benjamin Bratt"
+	},
+	{
+		"movie" : "Despicable Me 2",
+		"actor" : "Miranda Cosgrove"
+	},
+	{
+		"movie" : "Despicable Me 2",
+		"actor" : "Russell Brand"
+	},
+	{
+		"movie" : "Man of Steel",
+		"actor" : "Henry Cavill"
+	},
+	{
+		"movie" : "Man of Steel",
+		"actor" : "Amy Adams"
+	},
+	{
+		"movie" : "Man of Steel",
+		"actor" : "Michael Shannon"
+	},
+	{
+		"movie" : "Man of Steel",
+		"actor" : "Diane Lane"
+	},
+	{
+		"movie" : "Man of Steel",
+		"actor" : "Russell Crowe"
+	},
+	{
+		"movie" : "Gravity",
+		"actor" : "Sandra Bullock"
+	},
+	{
+		"movie" : "Gravity",
+		"actor" : "George Clooney"
+	},
+	{
+		"movie" : "Gravity",
+		"actor" : "Ed Harris"
+	},
+	{
+		"movie" : "Gravity",
+		"actor" : "Orto Ignatiussen"
+	},
+	{
+		"movie" : "Gravity",
+		"actor" : "Phaldut Sharma"
+	},
+	{
+		"movie" : "Monsters University",
+		"actor" : "Billy Crystal"
+	},
+	{
+		"movie" : "Monsters University",
+		"actor" : "John Goodman"
+	},
+	{
+		"movie" : "Monsters University",
+		"actor" : "Steve Buscemi"
+	},
+	{
+		"movie" : "Monsters University",
+		"actor" : "Helen Mirren"
+	},
+	{
+		"movie" : "Monsters University",
+		"actor" : "Peter Sohn"
+	},
+	{
+		"movie" : "The Hobbit: The Desolation of Smaug",
+		"actor" : "Ian McKellen"
+	},
+	{
+		"movie" : "The Hobbit: The Desolation of Smaug",
+		"actor" : "Martin Freeman"
+	},
+	{
+		"movie" : "The Hobbit: The Desolation of Smaug",
+		"actor" : "Richard Armitage"
+	},
+	{
+		"movie" : "The Hobbit: The Desolation of Smaug",
+		"actor" : "Ken Stott"
+	},
+	{
+		"movie" : "The Hobbit: The Desolation of Smaug",
+		"actor" : "Graham McTavish"
+	},
+	{
+		"movie" : "Fast and Furious 6",
+		"actor" : "Vin Diesel"
+	},
+	{
+		"movie" : "Fast and Furious 6",
+		"actor" : "Paul Walker"
+	},
+	{
+		"movie" : "Fast and Furious 6",
+		"actor" : "Dwayne Johnson"
+	},
+	{
+		"movie" : "Fast and Furious 6",
+		"actor" : "Jordana Brewster"
+	},
+	{
+		"movie" : "Fast and Furious 6",
+		"actor" : "Michelle Rodriguez"
+	},
+	{
+		"movie" : "Oz the Great and Powerful",
+		"actor" : "James Franco"
+	},
+	{
+		"movie" : "Oz the Great and Powerful",
+		"actor" : "Mila Kunis"
+	},
+	{
+		"movie" : "Oz the Great and Powerful",
+		"actor" : "Rachel Weisz"
+	},
+	{
+		"movie" : "Oz the Great and Powerful",
+		"actor" : "Michelle Williams"
+	},
+	{
+		"movie" : "Oz the Great and Powerful",
+		"actor" : "Zach Braff"
+	},
+	{
+		"movie" : "Star Trek Into Darkness",
+		"actor" : "Chris Pine"
+	},
+	{
+		"movie" : "Star Trek Into Darkness",
+		"actor" : "Zachary Quinto"
+	},
+	{
+		"movie" : "Star Trek Into Darkness",
+		"actor" : "Zoe Saldana"
+	},
+	{
+		"movie" : "Star Trek Into Darkness",
+		"actor" : "Karl Urban"
+	},
+	{
+		"movie" : "Star Trek Into Darkness",
+		"actor" : "Simon Pegg"
+	},
+	{
+		"movie" : "Thor: The Dark World",
+		"actor" : "Chris Hemsworth"
+	},
+	{
+		"movie" : "Thor: The Dark World",
+		"actor" : "Natalie Portman"
+	},
+	{
+		"movie" : "Thor: The Dark World",
+		"actor" : "Tom Hiddleston"
+	},
+	{
+		"movie" : "Thor: The Dark World",
+		"actor" : "Anthony Hopkins"
+	},
+	{
+		"movie" : "Thor: The Dark World",
+		"actor" : "Christopher Eccleston"
+	},
+	{
+		"movie" : "World War Z",
+		"actor" : "Brad Pitt"
+	},
+	{
+		"movie" : "World War Z",
+		"actor" : "Mireille Enos"
+	},
+	{
+		"movie" : "World War Z",
+		"actor" : "Daniella Kertesz"
+	},
+	{
+		"movie" : "World War Z",
+		"actor" : "James Badge Dale"
+	},
+	{
+		"movie" : "World War Z",
+		"actor" : "Ludi Boeken"
+	},
+	{
+		"movie" : "The Croods",
+		"actor" : "Nicolas Cage"
+	},
+	{
+		"movie" : "The Croods",
+		"actor" : "Emma Stone"
+	},
+	{
+		"movie" : "The Croods",
+		"actor" : "Ryan Reynolds"
+	},
+	{
+		"movie" : "The Croods",
+		"actor" : "Catherine Keener"
+	},
+	{
+		"movie" : "The Croods",
+		"actor" : "Cloris Leachman"
+	},
+	{
+		"movie" : "American Hustle",
+		"actor" : "Christian Bale"
+	},
+	{
+		"movie" : "American Hustle",
+		"actor" : "Bradley Cooper"
+	},
+	{
+		"movie" : "American Hustle",
+		"actor" : "Amy Adams"
+	},
+	{
+		"movie" : "American Hustle",
+		"actor" : "Jeremy Renner"
+	},
+	{
+		"movie" : "American Hustle",
+		"actor" : "Jennifer Lawrence"
+	},
+	{
+		"movie" : "12 Years a Slave",
+		"actor" : "Chiwetel Ejiofor"
+	},
+	{
+		"movie" : "12 Years a Slave",
+		"actor" : "Dwight Henry"
+	},
+	{
+		"movie" : "12 Years a Slave",
+		"actor" : "Dickie Gravois"
+	},
+	{
+		"movie" : "12 Years a Slave",
+		"actor" : "Bryan Batt"
+	},
+	{
+		"movie" : "12 Years a Slave",
+		"actor" : "Lupita Nyong'o"
+	},
+	{
+		"movie" : "Dallas Buyers Club",
+		"actor" : "Matthew McConaughey"
+	},
+	{
+		"movie" : "Dallas Buyers Club",
+		"actor" : "Jennifer Garner"
+	},
+	{
+		"movie" : "Dallas Buyers Club",
+		"actor" : "Jared Leto"
+	},
+	{
+		"movie" : "Dallas Buyers Club",
+		"actor" : "Denis O'Hare"
+	},
+	{
+		"movie" : "Dallas Buyers Club",
+		"actor" : "Steve Zahn"
+	},
+	{
+		"movie" : "Blue Jasmine",
+		"actor" : "Cate Blanchett"
+	},
+	{
+		"movie" : "Blue Jasmine",
+		"actor" : "Joy Carlin"
+	},
+	{
+		"movie" : "Blue Jasmine",
+		"actor" : "Richard Conti"
+	},
+	{
+		"movie" : "Blue Jasmine",
+		"actor" : "Glen Caspillo"
+	},
+	{
+		"movie" : "Blue Jasmine",
+		"actor" : "Alec Baldwin"
+	}
+]
